@@ -1,0 +1,131 @@
+/* this is used to remove all the extra spaces of the webpage */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(2, 2, 27);
+}
+.logo{
+    font-size: 25px;
+    color: yellowgreen;
+}
+
+nav{
+    display: flex; /*this is used to align all items in row*/
+    justify-content: space-between; /*this is used to give space between the content*/
+    margin-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    padding-left: 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: yellowgreen;
+    font-size: 22px;
+    transition: .5s;
+}
+nav ul li a:hover{
+    color: red;
+    padding: 7px;
+}
+.search input{
+    background: yellow;
+    color: red;
+    font-size: 20px;
+}
+.search button{
+    background: yellowgreen;
+    cursor: pointer;
+    color: red;
+    font-size: 20px;
+}
+.search button:hover{
+    background: red;
+    color: yellowgreen;
+    transition: .5s;
+}
+.logo img{
+    width: 60px;
+    border-radius: 47%;
+}
+
+
+/* css for mobile devices start here */
+@media(max-width:830px) {
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul{
+        margin-top: 15px;
+    }
+    .search{
+        margin-top: 15px;
+    }
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .row2 img{
+        margin-right: 20px;
+    }
+}
+
+@media(max-width:400px){
+    nav ul li a{
+        font-size: 15px;
+    }
+    .search input{
+        font-size: 15px;
+    }
+    .search button{
+        font-size: 15px;
+    }
+}
+
+
+/* navigation ke baad ka css */
+.container{
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.row1{
+    flex-basis: 55%;
+}
+.row1 h1{
+    color: white;
+}
+.row1 p{
+    color: white;
+    margin-top: 12px;
+}
+.row2{
+    flex-basis: 40%;
+}
+.row2 img{
+    width: 330px;
+    padding-top: 29px;
+    margin-left: 135px;
+}
+
+
+/* code for footer starts here */
+.footer{
+    margin-top: 20px;
+}
+.footer p{
+    color: white;
+    align-items: center;
+    padding-left: 30px;
+}
